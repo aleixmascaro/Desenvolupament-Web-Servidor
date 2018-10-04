@@ -1,0 +1,32 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+
+    var n1, n2;
+
+    n1 = prompt('Introdueix el primer nombre: ', '');
+    n2 = prompt('Introdueix el segon nombre: ', '');
+
+    n1 = parseInt(n1);
+    n2 = parseInt(n2);
+
+    var suma;
+    var diferenci;
+
+    if (n1>n2){
+      suma = n1 + n2;
+      document.write('La suma dels dos nombres es: ' + suma);
+    }
+    else{
+      diferenci = n2 - n1;
+      document.write('La diferenci del segon nombre amb el primer es: ' + diferenci);
+    }
+  </script>
+</body>
+</html>

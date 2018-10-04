@@ -1,0 +1,31 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+
+    var dia, mes, any;
+
+    dia = prompt('Introdueix un dia amb nombre', '');
+    if(dia <= 0 || dia > 31 || isNaN(dia)){
+      dia = prompt('El dia introduit no compleix amb els requisits, torna-ho a internar', '');
+    }
+    mes = prompt('Introdueix un mes amb nombre', '');
+    if(mes <= 0 || mes > 12 || isNaN(mes)){
+      mes = prompt('El mes introduit no compleix amb els requisits, torna-ho a internar', '');
+    }
+    any = prompt('Introdueix un any amb nombre', '');
+    if(any < 0 || isNaN(any)){
+      any = prompt('El any introduit no compleix amb els requisits, torna-ho a internar', '');
+    }
+
+    if(dia == 25 && mes == 12){
+      document.write('Es el dia de nadal!!!')
+    }
+  </script>
+</body>
+</html>

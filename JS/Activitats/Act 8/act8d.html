@@ -1,0 +1,38 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+
+  var salari, anys, increment;
+
+  salari = prompt('Introdueix el salari del treballador: ', '');
+  anys = prompt('Introdueix els anys treballats a la empresa: ', '');
+
+  anys = parseInt(anys);
+  salari = parseFloat(salari);
+
+  if(salari >= 500){
+    document.write('El salari del següent any sera el mateix, es a dir, de ' + salari + ' €');
+  }
+
+  if(salari < 500 && anys >= 10){
+    increment = salari * 0.2;
+    salari = salari + increment;
+    document.write('El salari del següent any sera: ' + salari + ' €');
+  }
+  if(salari < 500 && anys < 10){
+    increment = salari * 0.05;
+    salari = salari + increment;
+    document.write('El salari del següent any sera: ' + salari + ' €');
+  }
+
+
+
+  </script>
+</body>
+</html>

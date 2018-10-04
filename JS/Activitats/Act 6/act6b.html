@@ -1,0 +1,29 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+
+  var nom, nota1, nota2, nota3;
+
+  nom = prompt('Introdueix el teu nom: ', '');
+  nota1 = prompt('Introdueix la primera nota del examen: ', '');
+  nota2 = prompt('Introdueix la segona nota del examen: ', '');
+  nota3 = prompt('Introdueix la tercera nota del examen: ', '');
+
+  var mitja = (parseInt(nota1) + parseInt(nota2) + parseInt(nota3))/3;
+
+  if (mitja >= 5){
+
+    document.write('Enhorabona, ' + nom + ', has aprovat el curs amb un ' + mitja);
+  }
+  else{
+    document.write('Mala sort, ' + nom + ', has suspes el curs amb un ' + mitja);
+  }
+  </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+  <script type="text/javascript">
+
+    var x, y;
+
+    x = prompt('Introdueix la coordenada x: ', '');
+    y = prompt('Introdueix la coordenada y: ', '');
+
+    if(x > 0 && y > 0){
+      document.write('Les coordenades marcades es troben al primer quadrant');
+    }
+    if(x < 0 && y > 0){
+      document.write('Les coordenades marcades es troben al segon quadrant');
+    }
+    if(x < 0 && y < 0){
+      document.write('Les coordenades marcades es troben al tercer quadrant');
+    }
+    if(x > 0 && y < 0){
+      document.write('Les coordenades marcades es troben al quart quadrant');
+    }
+  </script>
+
+</body>
+</html>
