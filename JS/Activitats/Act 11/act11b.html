@@ -1,0 +1,67 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+
+    var nom, id, edat, sexe;
+    var numPers, numHom, numDon, hom1865, edatMesVea, edatMesJove, nomMesVea, idMesJove;
+
+    numPers = 0;
+    numHom = 0;
+    numDon = 0;
+    hom1865 = 0;
+    edatMesVea = 0;
+    edatMesJove = 100;
+
+
+    do {
+
+      nom = prompt("Introdueix el nom del empleat: ", "");
+      id = prompt("Introdueix la id del empleat: ", "");
+      edat = prompt("Introdueix l'edat del empleat: ", "");
+      sexe = prompt("Introdueix el sexe del empleat:(home/dona) ", "");
+
+      numPers++;
+
+      if(sexe == "home"){
+        numHom++;
+      }
+      else{
+        if(sexe == "dona"){
+          numDon++;
+        }
+      }
+
+      if(sexe == "home" && edat >= 18 && edat <= 65){
+        hom1865++;
+      }
+      if(sexe == "dona" && edatMesVea < edat){
+        edatMesVea = edat;
+        nomMesVea = nom;
+      }
+
+      if(sexe == "home" && edatMesJove > edat){
+        edatMesJove = edat;
+        idMesJove = id;
+      }
+
+
+    } while (id != 0);
+
+    document.write("Hi ha " + numPers + " empleats.");
+    document.write("<br>");
+    document.write("Hi ha " + numHom + " homes i " + numDon + " dones.");
+    document.write("<br>");
+    document.write("Hi ha " + hom1865 + " homes entre 18 i 65 anys.");
+    document.write("<br>");
+    document.write("El nom de la dona mes vea es: " + nomMesVea);
+    document.write("<br>");
+    document.write("La id del home mes jove es: " + idMesJove);
+  </script>
+</body>
+</html>

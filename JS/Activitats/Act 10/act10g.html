@@ -1,0 +1,40 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+
+    var nombre, salarimitj, salarialt, total;
+
+    nombre = 1;
+    salarimitj = 0;
+    salarialt = 0;
+    total = 0;
+
+    while(nombre <= 5){
+
+      var treballador = prompt("Introdueix el salari d'un treballador", "");
+      treballador = parseInt(treballador);
+
+      if(treballador >= 500 && treballador <= 1000){
+        salarimitj++;
+      }
+      if(treballador > 1000){
+        salarialt++;
+      }
+      total += treballador;
+      nombre++;
+    }
+
+    document.write("Entre 500€ i 1000€ hi ha " + salarimitj + " treballadors");
+    document.write("<br>");
+    document.write("Més de 1000€ hi ha " + salarialt + " treballadors");
+    document.write("<br>");
+    document.write("El total dels salaris es: " + total);
+  </script>
+</body>
+</html>

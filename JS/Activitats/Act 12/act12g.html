@@ -1,0 +1,64 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+
+    var nota, mitjaA, mitjaB, mitjaC;
+
+    mitjaA = 0;
+    mitjaB = 0;
+    mitjaC = 0;
+
+    for (var i = 1; i <= 5; i++) {
+
+      nota = prompt("Introdueix la nota del estudiant nº " + i, "");
+      nota = parseInt(nota);
+
+      mitjaA += nota;
+    }
+    mitjaA = mitjaA/5;
+
+    for (var i = 1; i <= 6; i++) {
+
+      nota = prompt("Introdueix la nota del estudiant nº " + i, "");
+      nota = parseInt(nota);
+
+      mitjaB += nota;
+    }
+    mitjaB = mitjaB/6;
+
+    for (var i = 1; i <= 11; i++) {
+
+      nota = prompt("Introdueix la nota del estudiant nº " + i, "");
+      nota = parseInt(nota);
+
+      mitjaC += nota;
+    }
+    mitjaC = mitjaC/11;
+
+    document.write("La mitja de la clase A es " + mitjaA + ", ");
+    document.write("La mitja de la clase B es " + mitjaB + ", ");
+    document.write("La mitja de la clase C es " + mitjaC + ".");
+    document.write("<br>");
+
+    if(mitjaA > mitjaB && mitjaA > mitjaC){
+      document.write("La mitja de la classe A es la mes grossa.");
+    }
+    else{
+      if(mitjaB > mitjaC){
+        document.write("La mitja de la classe B es la mes grossa.");
+      }
+      else{
+        document.write("La mitja de la classe C es la mes grossa.");
+      }
+    }
+
+
+  </script>
+</body>
+</html>

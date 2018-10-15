@@ -1,0 +1,35 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+
+    var nombre, aprovats, suspesos, nota;
+
+    nombre = 1;
+    aprovats = 0;
+    suspesos = 0;
+
+    while(nombre <= 10){
+
+      nota = prompt("Introdueix la nota de l'estudiant: ", "");
+
+      if(nota < 5){
+        suspesos++;
+      }
+      else{
+        aprovats++;
+      }
+      nombre++;
+    }
+    document.write("El nombre d'aprovats es: " + aprovats);
+    document.write("<br>");
+    document.write("El nombre de suspesos es: " + suspesos);
+
+  </script>
+</body>
+</html>

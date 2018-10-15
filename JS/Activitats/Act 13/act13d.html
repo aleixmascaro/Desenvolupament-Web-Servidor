@@ -1,0 +1,36 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+
+    function numDigits(x) {
+
+      if(x < 10 && x >= 0){
+        document.write("El nombre te 1 digit");
+      }
+      else{
+        if(x < 100){
+          document.write("El nombre te 2 digits");
+        }
+        else {
+          if (x < 1000) {
+            document.write("El nombre te 3 digits");
+          }
+          else {
+            document.write("El nombre te mes de 3 digits");
+          }
+        }
+      }
+    }
+    var nombre = prompt("Introdueix un nombre: ", "");
+    nombre = parseInt(nombre);
+
+    numDigits(nombre);
+  </script>
+</body>
+</html>

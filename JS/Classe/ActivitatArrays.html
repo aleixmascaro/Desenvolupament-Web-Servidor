@@ -1,0 +1,61 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script type="text/javascript">
+
+    var array=["bueno", "feo", "malo"];
+
+    function printList(){
+      var txt="<ul>";
+
+      for(var i = 0; i<array.length; i++){
+        txt += "<li>" + array[i] + "</li>";
+      }
+      txt += "</ul>";
+      document.getElementById("container").innerHTML=txt;
+    }
+    function sortarray(){
+      array.sort();
+      printList();
+    }
+    function unshiftarray(){
+      var txt = document.getElementById('newItem').value;
+      array.unshift(txt);
+      printList();
+    }
+    function shiftarray(){
+      array.shift();
+      printList();
+    }
+    function pusharray(){
+      var txt = document.getElementById('newItem').value;
+      array.push(txt);
+      printList();
+    }
+    function poparray(){
+      var txt = document.getElementById('newItem').value;
+      array.pop();
+      printList();
+    }
+  </script>
+</head>
+<body>
+  <h1>Llista modificable</h1>
+  <div id="container"></div>
+  <hr/>
+  ITEM:<input type="text" id="newItem" /><br/><br/>
+
+  <button onclick="sortarray()">SORT</button>
+  <button onclick="shiftarray()">SHIFT</button>
+  <button onclick="pusharray()">PUSH</button>
+  <button onclick="unshiftarray()">UNSHIFT</button>
+  <button onclick="poparray()">POP</button>
+
+  <script type="text/javascript">
+    printList();
+  </script>
+</body>
+</html>

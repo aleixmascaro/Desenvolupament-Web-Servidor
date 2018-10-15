@@ -1,0 +1,42 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+
+    var nombre1, nombre2, llista1, llista2, sum1, sum2;
+
+    nombre1 = 1;
+    nombre2 = 1;
+    sum1 = 0;
+    sum2 = 0;
+
+    while(nombre1 <= 3){
+
+      llista1 = prompt("Introdueix el nombre " + nombre1 + " de la primera llista", "");
+      llista1 = parseInt(llista1);
+
+      sum1 += llista1;
+      nombre1++;
+    }
+    while(nombre2 <= 3){
+
+      llista2 = prompt("Introdueix el nombre" + nombre2 + " de la segona llista", "");
+      llista2 = parseInt(llista2);
+
+      sum2 += llista2;
+      nombre2++;
+    }
+    if(sum1 < sum2){
+      document.write("La segona llista es la mes gran amb un total de: " + sum2);
+    }
+    else{
+      document.write("La primera llista es la mes gran amb un total de: " + sum1);
+    }
+  </script>
+</body>
+</html>

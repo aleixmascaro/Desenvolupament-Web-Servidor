@@ -1,0 +1,36 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+
+    function suma(x1, x2, x3, x4, x5) {
+
+      var suma = x1 + x2 + x3 + x4 + x5;
+
+      return suma;
+    }
+
+    var nombre1, nombre2, nombre3, nombre4, nombre5;
+
+    nombre1 = prompt("Introdueix el primer nombre: ", "");
+    nombre2 = prompt("Introdueix el segon nombre: ", "");
+    nombre3 = prompt("Introdueix el tercer nombre: ", "");
+    nombre4 = prompt("Introdueix el quart nombre: ", "");
+    nombre5 = prompt("Introdueix el quint nombre: ", "");
+
+    nombre1 = parseInt(nombre1);
+    nombre2 = parseInt(nombre2);
+    nombre3 = parseInt(nombre3);
+    nombre4 = parseInt(nombre4);
+    nombre5 = parseInt(nombre5);
+
+    document.write("La suma dels cinc nombres es: " + suma(nombre1, nombre2, nombre3, nombre4, nombre5));
+
+  </script>
+</body>
+</html>

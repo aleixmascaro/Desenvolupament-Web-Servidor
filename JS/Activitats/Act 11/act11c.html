@@ -1,0 +1,31 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+
+    var numComte, nom, dobers, sumDobers;
+
+    sumDobers = 0;
+
+    do {
+
+      numComte = prompt("Introdueix el numero de comte: ", "");
+      if(numComte != 0){
+        nom = prompt("Introdueix el nom del client:", "");
+        dobers = prompt("Introdueix el dobers del client", "");
+        dobers = parseInt(dobers);
+        sumDobers += dobers;
+        document.write(nom + " es el propietari de la conta " + numComte + " amb " + dobers + " €");
+        document.write("<br>");
+      }
+    } while (numComte != 0);
+
+    document.write("El banc te un total de: " + sumDobers + " €");
+  </script>
+</body>
+</html>

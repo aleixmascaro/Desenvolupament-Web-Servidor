@@ -1,0 +1,38 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+
+    var nombre, sum;
+
+    sum = 0;
+
+    do {
+      nombre = prompt("Introdueix un nombre: ", "");
+      nombre = parseInt(nombre);
+
+      if(nombre != 9999){
+        sum += nombre;
+      }
+
+    } while (nombre != 9999);
+
+    if(sum < 0){
+      document.write(sum + " NEGATIU");
+    }
+    else{
+      if(sum > 0){
+        document.write(sum + " POSITIU");
+      }
+      else{
+        document.write(sum + " ZERO");
+      }
+    }
+  </script>
+</body>
+</html>

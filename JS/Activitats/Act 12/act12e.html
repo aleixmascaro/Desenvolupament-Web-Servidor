@@ -1,0 +1,57 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+
+    var costat1, costat2, costat3, equilater, isoscels, escaler;
+
+    equilater = 0;
+    isoscels = 0;
+    escaler = 0;
+
+    for (var i = 1; i <= 4; i++) {
+
+      costat1 = prompt("Introdueix el primer costat del triangle " + i, "");
+      costat2 = prompt("Introdueix el segon costat del triangle " + i, "");
+      costat3 = prompt("Introdueix el tercer costat del triangle " + i, "");
+
+      if(costat1 == costat2 && costat1 == costat3){
+        equilater++;
+        document.write("El triangle " + i + " es equilater");
+        document.write("<br>");
+      }
+      else{
+        if(costat1 == costat2 || costat1 == costat3 || costat2 == costat3){
+          isoscels++;
+          document.write("El triangle " + i + " es isoscels");
+          document.write("<br>");
+        }
+        else{
+          escaler++;
+          document.write("El triangle " + i + " es escaler");
+          document.write("<br>");
+        }
+      }
+    }
+    document.write("Hi ha " + equilater + " triangles equilaters, " + isoscels + " d'isoscels i " + escaler + " d'escalers.");
+    document.write("<br>");
+
+    if(equilater > isoscels && equilater > escaler){
+      document.write("Hi ha mes triangles equilaters");
+    }
+    else{
+      if(isoscels > escaler){
+        document.write("Hi ha mes triangles isoscels");
+      }
+      else{
+        document.write("Hi ha mes triangles escalers");
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+
+    var nombre, sum;
+
+    sum = 0;
+
+    for (var i = 1; i <= 10; i++) {
+
+      nombre = prompt("Introdueix un nombre: ", "");
+      nombre = parseInt(nombre);
+
+      if(i > 5){
+        sum += nombre;
+      }
+
+    }
+
+    document.write("La suma dels 5 darrers nombres es: " + sum);
+  </script>
+</body>
+</html>

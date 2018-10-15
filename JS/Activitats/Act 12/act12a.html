@@ -1,0 +1,35 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+
+    var b, h, a, tgrans;
+
+    tgrans = 0;
+
+    for (var i = 1; i <= 3; i++) {
+
+      b = prompt("Introdueix la base del triangle " + i + " :", "");
+      h = prompt("Introdueix l'altura del triangle " + i + " :", "");
+      b = parseInt(b);
+      h = parseInt(h);
+
+      a = (b*h)/2;
+
+      document.write("L'area del triangle " + i + " es: " + a);
+      document.write("<br>");
+
+      if(a > 12){
+        tgrans++;
+      }
+    }
+
+    document.write("Hi ha " + tgrans + " triangles mes grans que 12");
+  </script>
+</body>
+</html>

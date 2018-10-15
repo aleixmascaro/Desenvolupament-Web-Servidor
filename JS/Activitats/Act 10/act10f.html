@@ -1,0 +1,34 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+
+    var nombre, altures, mitja;
+
+    nombre = 1;
+    mitja = 0;
+
+    while(nombre <= 5){
+
+      altures = prompt("Introdueix la teva altura: ", "");
+      altures = parseFloat(altures);
+
+      mitja += altures;
+      if(nombre == 5){
+        break;
+      }
+      nombre++;
+    }
+    mitja = mitja/nombre;
+
+    document.write("La mitja de les altures es: " + mitja);
+  </script>
+
+
+</body>
+</html>

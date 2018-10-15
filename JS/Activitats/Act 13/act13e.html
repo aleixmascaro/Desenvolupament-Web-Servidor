@@ -1,0 +1,31 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+
+    function mitja(x1, x2, x3) {
+
+      var mitja = (x1 + x2 + x3)/3;
+
+      return mitja;
+    }
+
+    var nombre1, nombre2, nombre3;
+
+    nombre1 = prompt("Introdueix el primer nombre: ", "");
+    nombre2 = prompt("Introdueix el segon nombre: ", "");
+    nombre3 = prompt("Introdueix el tercer nombre: ", "");
+
+    nombre1 = parseInt(nombre1);
+    nombre2 = parseInt(nombre2);
+    nombre3 = parseInt(nombre3);
+
+    document.write("La mitja dels tres nombres es: " + mitja(nombre1, nombre2, nombre3));
+  </script>
+</body>
+</html>
