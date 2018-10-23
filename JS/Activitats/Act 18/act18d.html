@@ -1,0 +1,24 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+
+    var email, pos;
+
+    email = prompt("Introdueix un email: ", "");
+    pos = email.indexOf("@");
+
+    if(pos == -1){
+      document.write("L'email introduit no es correcte");
+    }
+    else{
+      document.write("Has introduit l'email correctament");
+    }
+  </script>
+</body>
+</html>

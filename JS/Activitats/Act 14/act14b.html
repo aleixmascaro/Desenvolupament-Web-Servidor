@@ -1,0 +1,50 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script type="text/javascript">
+
+    function Persona(nom, edat) {
+
+      this.nom = nom;
+      this.edat = edat;
+      this.potTreballar = potTreballar;
+    }
+
+    function Companyia(nom, edatMax) {
+
+      this.nom = nom;
+      this.edatMax = edatMax;
+      this.potTreballar = potTreballar;
+      this.tTotal = 0;
+
+    }
+
+    function potTreballar(edat) {
+      if(edat < this.edatMax){
+        this.tTotal++;
+      }
+    }
+  </script>
+</head>
+<body>
+  <script type="text/javascript">
+
+    var t1, t2, c1;
+
+    t1 = new Persona("Joan", 25);
+    t2 = new Persona("Toni", 45);
+    c1 = new Companyia("Tesla", 65);
+
+
+    c1.potTreballar(t1.edat);
+    c1.potTreballar(t2.edat);
+
+    document.write("El nombre de treballadors que poden treballar a la empresa " + c1.nom + " es de: " + c1.tTotal + ".");
+
+
+  </script>
+</body>
+</html>

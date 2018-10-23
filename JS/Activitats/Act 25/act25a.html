@@ -1,0 +1,34 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+
+    function mostrar() {
+
+      var nom, email, com;
+
+      nom = document.getElementById("text1").value;
+      email = document.getElementById("text2").value;
+      com = document.getElementById("text3").value;
+
+      alert("Nom: " + nom);
+      alert("Email: " + email);
+      alert("Comentaris: " + com);
+    }
+  </script>
+  <form>
+    Nom: <input type="text" id="text1">
+    <br>
+    Email: <input type="text" id="text2">
+    <br>
+    Comentaris: <textarea  rows="10" cols="10" id="text3"></textarea>
+    <br>
+    <button type="button" onclick="mostrar()">Mostrar</button>
+  </form>
+</body>
+</html>

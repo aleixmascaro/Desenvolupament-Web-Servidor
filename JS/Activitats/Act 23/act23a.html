@@ -1,0 +1,62 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <script type="text/javascript">
+    function mostrarSelec() {
+
+      var selec = "";
+
+      if (document.getElementById('checkbox1').checked) {
+
+        selec += "Futbol, ";
+
+      }
+
+      if (document.getElementById('checkbox2').checked) {
+
+        selec += "Tennis, ";
+
+      }
+
+      if (document.getElementById('checkbox3').checked) {
+
+        selec += "Karate.";
+
+      }
+
+      alert("Els esports que practiques son: " + selec);
+
+    }
+  </script>
+
+  <form>
+
+    Quins esports fas?
+
+    <br>
+
+    <input type="checkbox" id="checkbox1">Futbol
+
+    <br>
+
+    <input type="checkbox" id="checkbox2">Tennis
+
+    <br>
+
+    <input type="checkbox" id="checkbox3">Karate
+
+    <br>
+
+    <button type="button" onclick="mostrarSelec()">Mostrar</button>
+
+  </form>
+</body>
+
+</html>

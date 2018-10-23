@@ -1,0 +1,40 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+
+    function preu() {
+
+     var sel=document.getElementById('select1');
+
+     document.getElementById('text1').value=sel.options[sel.selectedIndex].value;
+
+    }
+
+  </script>
+
+  <form>
+    Pizzas:
+
+     <select id="select1" onChange="preu()">
+
+
+       <option value="6€">Pepperoni</option>
+       <option value="5€">Quatro Formaggi</option>
+       <option value="4€">Procciuto</option>
+
+     </select>
+
+     <br>
+
+   Preu Seleccionat:<input type="text" id="text1">
+
+
+  </form>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+
+    function getNom() {
+
+      var nom, cognom1, cognom2;
+
+      nom = document.getElementById("nom").value;
+      cognom1 = document.getElementById("cognom1").value;
+      cognom2 = document.getElementById("cognom2").value;
+
+      alert(nom + " " + cognom1 + " " + cognom2);
+    }
+
+  </script>
+
+  <form>
+    Escriu el nom: <input type="text" id="nom">
+    <br />
+    Escriu el primer cognom: <input type="text" id="cognom1">
+    <br />
+    Escriu el segon cognom: <input type="text" id="cognom2">
+
+  </form>
+  <button type="button" onclick="getNom()">Pitja per saber el nom complet</button>
+</body>
+</html>

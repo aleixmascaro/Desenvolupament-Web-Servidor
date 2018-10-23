@@ -1,0 +1,36 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script type="text/javascript" src="../jquery-3.3.1.min.js">
+
+  </script>
+</head>
+<body>
+  <h2>Aixo es un titol</h2>
+  <p id="p1">Aixo es un paragraf</p>
+  <p id="p2">Aixo es un altre paragraf</p>
+  <button type="button" name="button" id="b1">Pitjem</button>
+  <button type="button" name="button" id="b2">Mostrar p1</button>
+  <button type="button" name="button" id="b3">Mostrar p2</button>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $("#b1").click(function(){
+        $("p").toggle("slow");
+      });
+    });
+    $(document).ready(function(){
+      $("#b2").click(function(){
+        $("#p1").show();
+      });
+    });
+    $(document).ready(function(){
+      $("#b3").click(function(){
+        $("#p2").show();
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+
+    var p, mitjap, darrerap, inversap, lletresp, vocalsp;
+
+    p = prompt("Introdueix una paraula: ", "");
+
+    mitjap = p.substring(0, parseInt(p.length/2));
+    document.write("La primera mitja part de la paraula es: " + mitjap + "<br>");
+
+    darrerap = p.charAt(p.length - 1);
+    document.write("La darrera lletra de la paraula es: " + darrerap + "<br>");
+
+    inversap = "";
+    for (var i = p.length - 1; i >= 0; i--) {
+      inversap += p.charAt(i);
+    }
+    document.write("La paraula inversa es: " + inversap + "<br>");
+
+    lletresp = "";
+    for (var i = 0; i < p.length; i++) {
+      lletresp += " " + p.charAt(i);
+    }
+    document.write("La paraula separada per lletres es: " + lletresp + "<br>");
+
+    vocalsp = 0;
+    for (var i = 0; i < p.length; i++) {
+      if(p.charAt(i) == "a" || p.charAt(i) == "e" || p.charAt(i) == "i" || p.charAt(i) == "o" || p.charAt(i) == "u"){
+        vocalsp++;
+      }
+    }
+    document.write("El nombre de vocals de la paraula es de: " + vocalsp);
+  </script>
+</body>
+</html>

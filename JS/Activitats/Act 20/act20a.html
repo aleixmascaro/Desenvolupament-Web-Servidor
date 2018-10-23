@@ -1,0 +1,26 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+
+    function quadrat() {
+
+      var nombre = document.getElementById("nombre").value;
+
+      var quadrat = Math.pow(nombre, 2);
+
+      alert("El quadrat de " + nombre + " es: " + quadrat);
+    }
+  </script>
+  <form>
+    Escriu un nombre: <input type="text" id="nombre">
+
+  </form>
+  <button type="button" onclick="quadrat()">Elevar al quadrat</button>
+</body>
+</html>

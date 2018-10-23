@@ -1,0 +1,25 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+
+    var text, sercar, pos;
+
+    text = prompt("Introdueix un text: ", "");
+    sercar = prompt("Introdueix una frase, paraula o lletra per sercar al text", "");
+    pos = text.indexOf(sercar);
+
+    if(pos == -1){
+      document.write("La frase, paraula o lletra sercada no es troba en el text");
+    }
+    else{
+      document.write("La posicio de la frase, paraula o lletra sercada es: " + pos);
+    }
+  </script>
+</body>
+</html>

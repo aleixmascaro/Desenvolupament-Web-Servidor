@@ -1,0 +1,66 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+
+    function sumatori(array) {
+
+      var suma = 0;
+
+      for (var i = 0; i < array.length; i++) {
+        suma += array[i];
+      }
+      document.write("La suma de la array es: " + suma);
+    }
+    function mitja(array) {
+
+      var mitja = 0;
+
+      for (var i = 0; i < array.length; i++) {
+        mitja += array[i];
+      }
+      mitja = mitja/array.length;
+      document.write("La mitja de la array es: " + mitja);
+    }
+    function sumatoriMajor5(array) {
+
+      var suma = 0;
+
+      for (var i = 0; i < array.length; i++) {
+        if(array[i] > 5){
+          suma += array[i];
+        }
+      }
+      document.write("La suma dels nombres mes grans que 5 es: " + suma);
+    }
+    function majorsQue5(array) {
+
+      var suma = 0;
+
+      for (var i = 0; i < array.length; i++) {
+        if(array[i] > 5){
+          suma++;
+        }
+      }
+      document.write("Hi ha " + suma + " nombres majors que 5");
+    }
+
+
+    var vector = new Array(1, 2, 3, 4, 5, 6, 7, 8);
+
+    sumatori(vector);
+    document.write("<br>");
+    mitja(vector);
+    document.write("<br>");
+    sumatoriMajor5(vector);
+    document.write("<br>");
+    majorsQue5(vector);
+
+  </script>
+</body>
+</html>

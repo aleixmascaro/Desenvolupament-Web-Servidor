@@ -1,0 +1,47 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script type="text/javascript">
+
+  function Addition(valor1, valor2) {
+
+    this.valor1 = valor1;
+    this.valor2 = valor2;
+    this.resultat =0;
+
+    this.loadvalor1 = loadvalor1;
+    this.loadvalor2 = loadvalor2;
+    this.sumar = sumar;
+  }
+
+  function loadvalor1(v) {
+    this.valor1 = v;
+  }
+
+  function loadvalor2(v){
+    this.valor2 = v;
+  }
+
+  function sumar() {
+    this.resultat = this.valor1 + this.valor2;
+  }
+  </script>
+</head>
+<body>
+  <script type="text/javascript">
+
+    var suma;
+
+    suma = new Addition(4, 6);
+    suma.loadvalor1(5);
+    suma.loadvalor2(20);
+    suma.sumar();
+
+
+    document.write(suma.valor1);
+  </script>
+</body>
+</html>

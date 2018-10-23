@@ -1,0 +1,47 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+
+    function crearArray(n) {
+
+      var array = new Array(n);
+
+      var primer, segon;
+
+      primer = prompt("Introdueix el primer nombre de la array:", "");
+      primer = parseInt(primer);
+      segon = prompt("Introdueix el segon nombre de la array:", "");
+      segon = parseInt(segon);
+
+      for (var i = 0; i < array.length; i++) {
+        if(i%2 == 0){
+          array[i] = primer;
+        }
+        else{
+          array[i] = segon;
+        }
+      }
+      document.write("La array es: " + array);
+      document.write("<br>");
+
+      var suma = 0;
+
+      for (var i = 0; i < array.length; i++) {
+        suma += array[i];
+      }
+      document.write("La suma dels nombres de la array es: " + suma);
+      document.write("<br>");
+      document.write("<br>");
+
+    }
+    crearArray(5);
+    crearArray(8);
+  </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+
+    function preu() {
+
+      var sel=document.getElementById('select1');
+
+      document.getElementById('text1').value=sel.options[sel.selectedIndex].value;
+
+    }
+    function preuFinal() {
+
+      var cant, sel, preu;
+
+      sel=document.getElementById('select1');
+
+      cant = document.getElementById('text2').value;
+      preu = sel.options[sel.selectedIndex].value;
+      cant = parseInt(cant);
+      preu = parseInt(preu);
+
+      document.getElementById('total').value = preu * cant;
+    }
+
+  </script>
+  <form>
+    Pizzas:
+
+    <select id="select1" onChange="preu()">
+
+      <option value="6">Pepperoni</option>
+      <option value="5">Quatro Formaggi</option>
+      <option value="4">Procciuto</option>
+
+    </select>
+    Preu: <input type="text" id="text1"> €
+    <br>
+    Quantes pizzes vols? <input type="text" id="text2"> €
+    <br>
+    <button type="button" onclick="preuFinal()">Calcular</button>
+    <input type="text" id="total"> €
+
+  </form>
+</body>
+</html>

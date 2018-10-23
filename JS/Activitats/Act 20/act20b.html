@@ -1,0 +1,37 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+
+    function mesGran() {
+
+      var nombre1, nombre2;
+
+      nombre1 = document.getElementById("nombre1").value;
+      nombre2 = document.getElementById("nombre2").value;
+      nombre1 = parseInt(nombre1);
+      nombre2 = parseInt(nombre2);
+
+      if(nombre1 > nombre2){
+        alert("El nombre " + nombre1 + " es el mes gran");
+      }
+      else{
+        alert("El nombre " + nombre2 + " es el mes gran");
+      }
+    }
+
+  </script>
+  <form>
+    Escriu un nombre: <input type="text" id="nombre1">
+    <br />
+    Escriu un nombre: <input type="text" id="nombre2">
+
+  </form>
+  <button type="button" onclick="mesGran()">Pitja per saber el mes gran</button>
+</body>
+</html>

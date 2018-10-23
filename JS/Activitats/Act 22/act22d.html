@@ -1,0 +1,78 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+
+    function nota() {
+
+      var s1, s2, s3, s4, nota1, nota2, nota3, nota4, total;
+
+      s1 = document.getElementById("s1");
+      s2 = document.getElementById("s2");
+      s3 = document.getElementById("s3");
+      s4 = document.getElementById("s4");
+      total = 0;
+
+      nota1 = s1.options[s1.selectedIndex].value;
+      nota2 = s2.options[s2.selectedIndex].value;
+      nota3 = s3.options[s3.selectedIndex].value;
+      nota4 = s4.options[s4.selectedIndex].value;
+
+      if (nota1 == 3) {
+        total++;
+      }
+      if(nota2 == "javascript"){
+        total++;
+      }
+      if (nota3 == "merda") {
+        total++;
+      }
+      if (nota4 == 18) {
+        total++;
+      }
+
+      alert("La nota final es: " + total + "/4");
+    }
+  </script>
+  <form>
+    Quants de costats té un triangle?
+    <select id="s1">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+    </select>
+    <br>
+    Que esteim aprenent en aquest tema?
+    <select id="s2">
+      <option value="json">Json</option>
+      <option value="javascript">JavaScript</option>
+      <option value="jquery">Jquery</option>
+      <option value="bootstrap">BootStrap</option>
+    </select>
+    <br>
+    Quins d'aquests estils musicals no es música?
+    <select id="s3">
+      <option value="rock">Rock</option>
+      <option value="pop">Pop</option>
+      <option value="jazz">Jazz</option>
+      <option value="merda">Reaggeton</option>
+    </select>
+    <br>
+    A quina edat una persona es major de edat?
+    <select id="s4">
+      <option value="18">18</option>
+      <option value="21">21</option>
+      <option value="16">16</option>
+      <option value="25">25</option>
+    </select>
+    <br>
+    <button type="button" onclick="nota()">Calcular Nota</button>
+  </form>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+
+    function verificar() {
+
+      var pass1, pass2;
+
+      pass1 = document.getElementById("pass1").value;
+      pass2 = document.getElementById("pass2").value;
+
+      if (pass1 == pass2) {
+        alert("Contrasenya correcte");
+      }
+      else {
+        alert("Les dues contrasenyes no son iguals");
+      }
+    }
+  </script>
+  <form>
+    Escriu la contrasenya: <input type="password" id="pass1">
+    <br />
+    Repeteix la contrasenya: <input type="password" id="pass2">
+
+  </form>
+  <button type="button" onclick="verificar()">Pitja per verificar la contrasenya</button>
+</body>
+</html>

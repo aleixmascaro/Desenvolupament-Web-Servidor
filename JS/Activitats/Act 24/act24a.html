@@ -1,0 +1,40 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <script type="text/javascript">
+    function showSelected() {
+
+      if (document.getElementById('radio1').checked) {
+
+        alert("Pots entrar, ets major d'edat");
+
+      }
+
+      if (document.getElementById('radio2').checked) {
+
+        alert("No pots passar, no ets major d'edat");
+
+      }
+
+    }
+  </script>
+
+  <form>
+
+    <input type="radio" id="radio1">Major de 18 <br />
+
+    <input type="radio" id="radio2">Menor de 18 <br />
+
+    <input type="button" value="Mostrar" onClick="showSelected()">
+
+  </form>
+</body>
+
+</html>

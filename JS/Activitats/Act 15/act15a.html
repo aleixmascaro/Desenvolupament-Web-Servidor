@@ -1,0 +1,57 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+
+    function mostrar1r() {
+      var principi, fi;
+
+      principi = new Date(2018, 0, 1);
+      fi = new Date(2018, 2, 31);
+
+      document.write("El primer trimestre es " + principi.getDate() + "-" + (principi.getMonth() + 1)
+                      + " fins a " + fi.getDate() + "-" + (fi.getMonth() + 1));
+      document.write("<br>");
+    }
+    function mostrar2n() {
+      var principi, fi;
+
+      principi = new Date(2018, 3, 1);
+      fi = new Date(2018, 5, 30);
+
+      document.write("El segon trimestre es " + principi.getDate() + "-" + (principi.getMonth() + 1)
+                      + " fins a " + fi.getDate() + "-" + (fi.getMonth() + 1));
+      document.write("<br>");
+    }
+    function mostrar3r() {
+      var principi, fi;
+
+      principi = new Date(2018, 6, 1);
+      fi = new Date(2018, 8, 30);
+
+      document.write("El tercer trimestre es " + principi.getDate() + "-" + (principi.getMonth() + 1)
+                      + " fins a " + fi.getDate() + "-" + (fi.getMonth() + 1));
+      document.write("<br>");
+    }
+    function mostrar4rt() {
+      var principi, fi;
+
+      principi = new Date(2018, 9, 1);
+      fi = new Date(2018, 11, 31);
+
+      document.write("El quart trimestre es " + principi.getDate() + "-" + (principi.getMonth() + 1)
+                      + " fins a " + fi.getDate() + "-" + (fi.getMonth() + 1));
+      document.write("<br>");
+    }
+    mostrar1r();
+    mostrar2n();
+    mostrar3r();
+    mostrar4rt();
+  </script>
+</body>
+</html>

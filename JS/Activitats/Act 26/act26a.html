@@ -1,0 +1,56 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <script type="text/javascript">
+    function empty(control) {
+
+      control.value = '';
+
+    }
+
+    function verificar(control) {
+
+      if (control.value.length < 7 || control.value.length > 20) {
+        alert("La contrasenya introduida no es correcte");
+      }
+
+    }
+
+    function checkEntry(control) {
+
+      if (control.value == '')
+
+        alert("Has d'introduir el nom d'usuari");
+
+    }
+
+    function confirmar() {
+
+      document.getElementById("username").value = "";
+      document.getElementById("pass").value = "";
+      alert("Nom i Contraseya guardats!!");
+
+    }
+  </script>
+
+  <form>
+
+    <input type="text" id="username" onfocus="empty(this)" onBlur="checkEntry(this)" value="Nom d'Usuari"><br>
+
+    <input type="password" id="pass" onfocus="empty(this)" onBlur="verificar(this)" value="Contrasenya">
+
+    <br>
+
+    <input type="button" value="Confirm" onclick="confirmar()">
+
+  </form>
+</body>
+
+</html>
