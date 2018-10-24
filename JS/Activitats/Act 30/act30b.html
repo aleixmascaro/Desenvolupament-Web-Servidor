@@ -1,0 +1,31 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <script type="text/javascript">
+
+    function novaFin() {
+
+      var h, w;
+
+      h = screen.height/2;
+      w = screen.width;
+      h = parseInt(h);
+      w = parseInt(w);
+
+      var f = open("", "", "height = h, width = w");
+
+      f.document.write("height = " + h + "<br>" + "width = " + w);
+
+    }
+  </script>
+  <button type="button" onclick="novaFin()">Obrir nova Finestra</button>
+</body>
+
+</html>

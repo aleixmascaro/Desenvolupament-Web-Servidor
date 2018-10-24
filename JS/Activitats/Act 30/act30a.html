@@ -1,0 +1,33 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <script type="text/javascript">
+
+    function newLoc() {
+      var r = Math.round(Math.random()*2);
+
+      if (r == 0) {
+        window.location = "https://www.google.com/";
+      }
+      else{
+        if (r == 1) {
+          window.location = "https://www.youtube.com/";
+        }
+        else{
+          window.location = "https://www.marca.com/";
+        }
+      }
+    }
+  </script>
+
+  <a href="javascript:newLoc()">Prova Sort</a>
+</body>
+
+</html>

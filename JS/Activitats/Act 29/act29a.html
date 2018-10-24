@@ -1,0 +1,35 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <script type="text/javascript">
+
+    var w;
+
+    function openWindowParameters() {
+
+      w = open('', '', 'width=600,height=300');
+
+      w.document.write("First line.<br>");
+      w.document.write("<button type='button' onClick='window.close()'>Tancar</button>");
+
+    }
+  </script>
+
+
+  <form>
+
+    <br>
+
+    <input type="button" value="Open Window with Parameters" onClick="openWindowParameters()">
+
+  </form>
+</body>
+
+</html>
