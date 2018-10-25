@@ -1,0 +1,50 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script type="text/javascript" src="../../jquery-3.3.1.min.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+
+    $(document).ready(function(){
+      $("#t1").mouseover(function(){
+        $("#t1").css("backgroundColor", "black");
+      });
+      $("#t2").mouseover(function(){
+        $("#t2").css("backgroundColor", "blue");
+      });
+      $("#t3").mouseover(function(){
+        $("#t3").css("backgroundColor", "red");
+      });
+      $("#t4").mouseover(function(){
+        $("#t4").css("backgroundColor", "green");
+      });
+      $("#t1").mouseout(function(){
+        $("#t1").css("backgroundColor", "white");
+      });
+      $("#t2").mouseout(function(){
+        $("#t2").css("backgroundColor", "white");
+      });
+      $("#t3").mouseout(function(){
+        $("#t3").css("backgroundColor", "white");
+      });
+      $("#t4").mouseout(function(){
+        $("#t4").css("backgroundColor", "white");
+      });
+    });
+  </script>
+  <table border="1">
+    <tr>
+      <td id="t1">Negre</td>
+      <td id="t2">Blau</td>
+    </tr>
+    <tr>
+      <td id="t3">Vermell</td>
+      <td id="t4">Verd</td>
+    </tr>
+  </table>
+</body>
+</html>

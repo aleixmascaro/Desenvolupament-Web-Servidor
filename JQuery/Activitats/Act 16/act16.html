@@ -1,0 +1,33 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script type="text/javascript" src="../../jquery-3.3.1.min.js"></script>
+  <title>Document</title>
+  <style media="screen">
+    .texto{
+      color: blue;
+    }
+  </style>
+</head>
+
+<body>
+  <script type="text/javascript">
+
+    $(document).ready(function(){
+      $("#t1").focus(function(){
+        $(this).css("color", "red");
+      });
+      $("#t2").focus(function(){
+        $(this).css("color", "green");
+      });
+    });
+  </script>
+  <form>
+    <input type="text" id="t1" value="" class="texto">
+    <br>
+    <input type="text" id="t2" value="" class="texto">
+  </form>
+</body>
+</html>

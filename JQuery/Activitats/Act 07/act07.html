@@ -1,0 +1,30 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script type="text/javascript" src="../../jquery-3.3.1.min.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $("#b1").click(function(){
+        $("a").attr("href", "https://www.google.com/");
+      });
+      $("#b2").click(function(){
+        $("a").attr("href", "https://www.youtube.com/");
+      });
+      $("#b3").click(function(){
+        $("a").attr("href", "https://plays.tv/u/darkmaska");
+      });
+    });
+  </script>
+
+  <a href="" target="_blank">Link</a>
+  <br>
+  <button id="b1">Google</button>
+  <button id="b2">Youtube</button>
+  <button id="b3">PlaysTV</button>
+</body>
+</html>

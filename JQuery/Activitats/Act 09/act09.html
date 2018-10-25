@@ -1,0 +1,25 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script type="text/javascript" src="../../jquery-3.3.1.min.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+
+    $(document).ready(function(){
+      $("#b1").click(function(){
+        alert($("head").html());
+      });
+      $("#b2").click(function(){
+        alert($("body").html());
+      });
+    });
+  </script>
+
+  <button id="b1">Mostrar Head</button>
+  <button id="b2">Mostrar Body</button>
+</body>
+</html>

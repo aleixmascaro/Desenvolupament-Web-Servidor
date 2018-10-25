@@ -1,0 +1,54 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script type="text/javascript" src="../../jquery-3.3.1.min.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $(".r1t1").click(function(){
+        $(this).css("background-color", "red");
+      });
+      $("#r2t1").click(function(){
+        $(this).css("background-color", "yellow");
+      });
+    });
+    $(document).ready(function(){
+      $("#r1t2").click(function(){
+        $(this).css("fontSize", "5px");
+      });
+      $("#r2t2").click(function(){
+        $(this).css("fontSize", "10px");
+      });
+      $("#r3t2").click(function(){
+        $(this).css("fontSize", "20px");
+      });
+    });
+  </script>
+  <table border="1" id="t1">
+    <tr class="r1t1">
+      <td>Vermell</td>
+    </tr>
+    <tr id="r2t1">
+      <td>Groc</td>
+    </tr>
+    <tr class="r1t1">
+      <td>Vermell</td>
+    </tr>
+  </table>
+  <table border="1" id="t2">
+    <tr id="r1t2">
+      <td>Petit</td>
+    </tr>
+    <tr id="r2t2">
+      <td>Mitja</td>
+    </tr>
+    <tr id="r3t2">
+      <td>Gros</td>
+    </tr>
+  </table>
+</body>
+</html>

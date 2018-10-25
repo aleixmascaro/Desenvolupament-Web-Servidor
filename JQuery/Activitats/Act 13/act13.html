@@ -1,0 +1,41 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script type="text/javascript" src="../../jquery-3.3.1.min.js"></script>
+  <title>Document</title>
+  <style media="screen">
+    .div1{
+      border: 2px solid;
+      width: 200px;
+      height: 200px;
+    }
+  </style>
+</head>
+<body>
+  <script type="text/javascript">
+
+    $(document).ready(function(){
+      $("#d1").mouseover(function(){
+        $(this).mousemove(moveMouse);
+        $("#p1, #p2").show();
+        $("#p3").hide();
+      });
+      $("#d1").mouseout(function(){
+        $("#p3").show();
+        $("#p1, #p2").hide();
+      });
+    });
+    function moveMouse(event) {
+      $("#p1").text("Coordenades X = " + event.ClientX);
+      $("#p2").text("Coordenades Y = " + event.ClientY);
+    }
+  </script>
+  <div id="d1" class="div1">
+  </div>
+  <p id="p1">Coordenades X = </p>
+  <p id="p2">Coordenades Y = </p>
+  <p id="p3">Estas fora del div</p>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script type="text/javascript" src="../../jquery-3.3.1.min.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $("#b1").click(function(){
+        $(".t1").text("ON");
+      });
+    });
+  </script>
+  <table border="1">
+    <tr>
+      <td class="t1">OFF</td>
+    </tr>
+    <tr>
+      <td class="t1">OFF</td>
+    </tr>
+    <tr>
+      <td class="t1">OFF</td>
+    </tr>
+  </table>
+  <table border="1" id="t2">
+    <tr>
+      <td>OFF</td>
+    </tr>
+    <tr>
+      <td>OFF</td>
+    </tr>
+    <tr>
+      <td>OFF</td>
+    </tr>
+  </table>
+  <button type="button" id="b1">Canviar</button>
+</body>
+</html>

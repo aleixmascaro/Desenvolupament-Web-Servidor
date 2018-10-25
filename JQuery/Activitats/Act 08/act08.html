@@ -1,0 +1,62 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script type="text/javascript" src="../../jquery-3.3.1.min.js"></script>
+  <title>Document</title>
+  <style media="screen">
+
+    .tcap{
+      font: bold;
+      fontSize: 20px;
+      color: blue;
+      background-color: black;
+    }
+    .tcos{
+      fontSize: 15px;
+      color: red;
+      background-color: green;
+    }
+  </style>
+</head>
+<body>
+  <script type="text/javascript">
+
+    $(document).ready(function(){
+      $("#b1").click(function(){
+        $("thead").addClass("tcap");
+      });
+      $("#b1").click(function(){
+        $("tbody").addClass("tcos");
+      });
+      $("#b2").click(function(){
+        $("thead").removeClass("tcap");
+      });
+      $("#b2").click(function(){
+        $("tbody").removeClass("tcos");
+      });
+    });
+  </script>
+  <table border="1">
+    <thead>
+      <td>Titol</td>
+      <td>Autor</td>
+      <td>Preu</td>
+    </thead>
+    <tbody>
+      <td>Juego de Tronos</td>
+      <td>George R. R. Martin</td>
+      <td>20€</td>
+    </tbody>
+    <tbody>
+      <td>El nombre del viento</td>
+      <td>Patrick Rothfuss</td>
+      <td>25€</td>
+    </tbody>
+  </table>
+
+  <button id="b1">Posar estils</button>
+  <button id="b2">Llevar estils</button>
+</body>
+</html>

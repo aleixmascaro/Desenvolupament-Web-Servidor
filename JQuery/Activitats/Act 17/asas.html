@@ -1,0 +1,35 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script type="text/javascript" src="../../jquery-3.3.1.min.js"></script>
+
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+    var x;
+x=$(document);
+x.ready(initEvents);
+
+function initEvents() {
+var x;
+x=$("#div1 p");
+x.each(highlightParagraphs);
+}
+
+function highlightParagraphs() {
+var x=$(this);
+if (x.text().length<100) {
+x.css("background-color","#ff0");
+}
+}
+  </script>
+  <div id="div1">
+<p>Paragraph 01ssgdfgsgsgsdfgsdfgsdfgsdfgsdgfsdgsdfgsdfgsdfgsdfgsdfgsdgfsdfgsdgsdfgsdfgsfgsdg.</p>
+<p>Paragraph 02.</p>
+<p>Paragraph 03.</p>
+ </div>
+</body>
+</html>

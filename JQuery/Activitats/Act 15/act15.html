@@ -1,0 +1,39 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script type="text/javascript" src="../../jquery-3.3.1.min.js"></script>
+  <title>Document</title>
+  <style media="screen">
+    .div1{
+      border: 2px solid;
+      width: 800px;
+      height: 70px;
+    }
+  </style>
+</head>
+<body>
+  <script type="text/javascript">
+
+    $(document).ready(function(){
+      if ($("#d1").attr("width") == "800px") {
+        $("#d1").dblclick(function(){
+          $(this).css("width", "200px");
+          $(this).css("height", "200px");
+        });
+      }
+      else{
+        $("#d1").dblclick(function(){
+          $(this).css("width", "800px");
+          $(this).css("height", "70px");
+        });
+      }
+    });
+    document.write($("#d1").attr("style='width'"));
+  </script>
+  <div class="div1" id="d1">
+
+  </div>
+</body>
+</html>
